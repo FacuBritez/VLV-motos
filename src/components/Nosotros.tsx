@@ -16,7 +16,7 @@ function Nosotros() {
                             {/*Tabla descripción*/}
                             <p>
                                 Somos un taller mecánico de motos con más de
-                                <b>{year} años de experiencia</b>.
+                                <b> {year} años de experiencia</b>.
                                 Nos enfocamos en brindar servicios de reparación
                                 y mantenimiento de alta calidad, incluyendo instalaciones
                                 eléctricas, afinación y soldaduras, entre otros.
