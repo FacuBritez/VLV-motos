@@ -1,8 +1,9 @@
 import React from "react";
+import '../stylesheets/Banner.sass'
 
 function Banner() {
     return(
-        <img alt="" />
+        <img className="img" src={require('../assets/taller.png')} alt="" />
     )
 }
 
