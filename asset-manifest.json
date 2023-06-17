@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/FacuBritez/VLV-motos/static/css/main.bb4659fe.css",
-    "main.js": "/FacuBritez/VLV-motos/static/js/main.cb8a7a23.js",
-    "static/media/taller.png": "/FacuBritez/VLV-motos/static/media/taller.a226ab413d71c807388b.png",
-    "static/media/logo.png": "/FacuBritez/VLV-motos/static/media/logo.2a0ba6d74becd106c223.png",
-    "index.html": "/FacuBritez/VLV-motos/index.html",
-    "main.bb4659fe.css.map": "/FacuBritez/VLV-motos/static/css/main.bb4659fe.css.map",
-    "main.cb8a7a23.js.map": "/FacuBritez/VLV-motos/static/js/main.cb8a7a23.js.map"
+    "main.css": "/VLV-motos/static/css/main.98db2738.css",
+    "main.js": "/VLV-motos/static/js/main.bc66f710.js",
+    "static/media/taller.png": "/VLV-motos/static/media/taller.a226ab413d71c807388b.png",
+    "static/media/logo.png": "/VLV-motos/static/media/logo.2a0ba6d74becd106c223.png",
+    "index.html": "/VLV-motos/index.html",
+    "main.98db2738.css.map": "/VLV-motos/static/css/main.98db2738.css.map",
+    "main.bc66f710.js.map": "/VLV-motos/static/js/main.bc66f710.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb4659fe.css",
-    "static/js/main.cb8a7a23.js"
+    "static/css/main.98db2738.css",
+    "static/js/main.bc66f710.js"
   ]
 }
