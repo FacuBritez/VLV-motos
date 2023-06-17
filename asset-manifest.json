@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//github.com/FacuBritez/VLV-motos/static/css/main.f3570d7f.css",
+    "main.js": "//github.com/FacuBritez/VLV-motos/static/js/main.d0a8c4c9.js",
+    "static/media/taller.png": "//github.com/FacuBritez/VLV-motos/static/media/taller.a226ab413d71c807388b.png",
+    "static/media/logo.png": "//github.com/FacuBritez/VLV-motos/static/media/logo.2a0ba6d74becd106c223.png",
+    "index.html": "//github.com/FacuBritez/VLV-motos/index.html",
+    "main.f3570d7f.css.map": "//github.com/FacuBritez/VLV-motos/static/css/main.f3570d7f.css.map",
+    "main.d0a8c4c9.js.map": "//github.com/FacuBritez/VLV-motos/static/js/main.d0a8c4c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3570d7f.css",
+    "static/js/main.d0a8c4c9.js"
+  ]
+}
