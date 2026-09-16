@@ -1,0 +1,147 @@
+:root {
+  --bg: #0d0d0d;
+  --bg-2: #151515;
+  --bg-3: #1c1c1c;
+  --text: #e8e8e8;
+  --muted: #9a9a9a;
+  --accent: #f77f00;
+  --accent-2: #ff9a2e;
+  --border: rgba(255, 255, 255, .08);
+  --radius: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin-inline: auto;
+}
+
+/* ========== SECCIONES (compartido) ========== */
+section {
+  padding: 6.5rem 0;
+  position: relative;
+}
+
+section.alt {
+  background: var(--bg-2);
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  color: #fff;
+  margin-bottom: .6rem;
+}
+
+.section-title span {
+  color: var(--accent);
+}
+
+.section-lead {
+  color: var(--muted);
+  max-width: 620px;
+  margin-bottom: 3rem;
+}
+
+.section-title.center,
+.section-lead.center {
+  text-align: center;
+  margin-inline: auto;
+}
+
+/* ========== BOTONES (compartido) ========== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .9rem 1.8rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: .95rem;
+  letter-spacing: .03em;
+  border-radius: 999px;
+  transition: transform .2s ease, background .25s ease, box-shadow .25s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #111;
+}
+
+.btn-primary:hover {
+  background: var(--accent-2);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(247, 127, 0, .35);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, .5);
+}
+
+.btn-ghost:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, .08);
+  transform: translateY(-2px);
+}
+
+/* ========== ANIMACIONES (compartido) ========== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== RESPONSIVE (global) ========== */
+@media (max-width: 860px) {
+  section { padding: 4.5rem 0; }
+  .btn { justify-content: center; }
+}

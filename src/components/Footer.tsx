@@ -1,12 +1,23 @@
-import React from "react";
-import '../stylesheets/Footer.sass'
+import React from 'react';
+import '../stylesheets/Footer.scss';
 
 function Footer() {
-    return (
-        <div className="bg-dark">
-            <p className="p-2">Copyright  © 2023 - Desarrollado por <a href="https://github.com/FacuBritez" target="_blank" className="text-danger"><b>Facundo Britez</b></a>.</p>
-        </div>
-    )
+  const year = new Date().getFullYear();
+
+  return (
+    <footer>
+      <div className="container">
+        Copyright © {year} · Desarrollado por{' '}
+        <a
+          href="https://www.linkedin.com/in/facundoivanbritez/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Facundo Britez
+        </a>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

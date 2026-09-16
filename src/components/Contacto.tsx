@@ -1,40 +1,55 @@
-import React from "react";
-import '../stylesheets/Contacto.sass'
+import React from 'react';
+import '../stylesheets/Contacto.scss';
 
 function Contacto() {
+  return (
+    <section id="contacto">
+      <div className="container">
+        <h2 className="section-title center">Contacto y <span>horarios</span></h2>
+        <p className="section-lead center">Estamos para ayudarte. Escribinos o pasá por el taller.</p>
 
-    return (
-        <div> {/*sin este div no se queda centrado*/}
-            <div id="contacto">
-                <h2>Información de contacto</h2>
-                <br />
-                <p>Mandanos un mensaje!</p>
-                <div className="links">
-                    <a href="https://api.whatsapp.com/send?phone=011 5944-7636" target="_blank">
-                        <i className="fab fa-whatsapp" style={{color: "#25d366"}}></i> 011 5944-7636
-                    </a>
-                    <a href="mailto:vlv-motos@outlook.com" target="_blank" style={{ whiteSpace: 'nowrap' }}>
-                        <i className="far fa-envelope" style={{color: "grey"}}></i> vlv-motos@outlook.com
-                    </a>
-                    <br />
-                    <a href="https://www.facebook.com/Vlv-motos-180447498801595" target="_blank">
-                        <i className="fab fa-facebook-f" style={{color: "#3b5998"}}></i> vlv-motos
-                    </a>
-                    <a href="" target="_blank"></a>
-                </div>
-            </div>
-            <div id="horarios">
-                <h2>
-                    Horarios
-                </h2>
-                <p>
-                    Lun-Vie: 9.00 am - 21.00 pm<br />
-                    Sábado: Cerrado<br />
-                    Domingo: Cerrado
-                </p>
-            </div>
+        <div className="info-grid">
+          <div className="info-card reveal">
+            <h3>Información de contacto</h3>
+            <ul className="contact-list">
+              <a href="https://wa.me/5491159447636" target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-whatsapp"></i>
+                <span>
+                  <span className="label">WhatsApp</span>
+                  <span className="value">+54 11 5944-7636</span>
+                </span>
+              </a>
+
+              <a href="mailto:vlv-motos@outlook.com" target="_blank" rel="noreferrer">
+                <i className="fa-solid fa-envelope"></i>
+                <span>
+                  <span className="label">Email</span>
+                  <span className="value">vlv-motos@outlook.com</span>
+                </span>
+              </a>
+
+              <a href="https://www.facebook.com/Vlv-motos-180447498801595" target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-facebook"></i>
+                <span>
+                  <span className="label">Facebook</span>
+                  <span className="value">VLV Motos</span>
+                </span>
+              </a>
+            </ul>
+          </div>
+
+          <div className="info-card reveal">
+            <h3>Horarios de atención</h3>
+            <ul className="horarios-list">
+              <li><span className="day">Lunes a Viernes</span><span className="hour">9:00 – 21:00</span></li>
+              <li><span className="day">Sábado</span><span className="closed">Cerrado</span></li>
+              <li><span className="day">Domingo</span><span className="closed">Cerrado</span></li>
+            </ul>
+          </div>
         </div>
-    )
+      </div>
+    </section>
+  );
 }
 
 export default Contacto;

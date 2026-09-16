@@ -1,32 +1,27 @@
-import './App.sass';
-import Banner from './components/Banner'
-import Contacto from './components/Contacto'
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Mapa from './components/Mapa';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 import Nosotros from './components/Nosotros';
+import Servicios from './components/Servicios';
+import Contacto from './components/Contacto';
+import Mapa from './components/Mapa';
+import Footer from './components/Footer';
+import { useReveal } from './hooks/useReveal';
 
 function App() {
-   return (
-      <div className="App">
-         <Header />
-         <Banner />
-         <div className="bg">
-            <Nosotros />
-            <div className="container">
-               <div className="row">
-                  <div className="col-lg-6 col-12">
-                     <Contacto />
-                  </div>
-                  <div className="col-lg-6 col-12">
-                     <Mapa />
-                  </div>
-               </div>
-            </div>
-         </div>
-         <Footer />
-      </div>
-   );
+  useReveal();
+
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Nosotros />
+      <Servicios />
+      <Contacto />
+      <Mapa />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
